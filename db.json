@@ -6,53 +6,60 @@
         "fullName": "Nils Karlsson",
         "street": "Kostavagen 16",
         "zipCode": "34343",
-        "city": "Lessebo"
+        "city": "Lessebo",
+        "profilePic": "https://www.randomaddressgenerator.com/media/face/male7.jpg"
       },
       {
         "id": 2,
         "name": "Marcus",
-        "fullName": "Nils Karlsson",
-        "street": "Kostavagen 16",
+        "fullName": "Marcus Nyman",
+        "street": "vagen 16",
         "zipCode": "34343",
-        "city": "Lessebo"
+        "city": "Växjö",
+        "profilePic": "https://www.randomaddressgenerator.com/media/face/male2.jpg"
       },
       {
         "id": 3,
-        "name": "Nisse",
-        "fullName": "Nils Karlsson",
-        "street": "Kostavagen 16",
+        "name": "Emma",
+        "fullName": "Emma Karlsson",
+        "street": "synthvagen 2",
         "zipCode": "34343",
-        "city": "Lessebo"
+        "city": "hemmaboda",
+        "profilePic": "https://www.randomaddressgenerator.com/media/face/female1.jpg"
       },
       {
         "id": 4,
-        "name": "Nils",
-        "fullName": "Nils Karlsson",
-        "street": "Kostavagen 16",
+        "name": "Sarah",
+        "fullName": "Sarah Jillson",
+        "street": "krutvägen 1",
         "zipCode": "34343",
-        "city": "Lessebo"
+        "city": "Kruteboda",
+        "profilePic": "https://www.randomaddressgenerator.com/media/face/female2.jpg"
       },
       {
         "id": 5,
-        "name": "Emil",
-        "fullName": "Nils Karlsson",
-        "street": "Kostavagen 16",
+        "name": "Liam",
+        "fullName": "Liam Neson",
+        "street": "Hollywood boulevard",
         "zipCode": "34343",
-        "city": "Lessebo"
+        "city": "La",
+        "profilePic": "https://www.randomaddressgenerator.com/media/face/male9.jpg"
       },
       {
         "id": 6,
-        "name": "Sven",
-        "fullName": "Nils Karlsson",
-        "street": "Kostavagen 16",
+        "name": "Ritva",
+        "fullName": "Ritva roboda",
+        "street": "Kungsvägen 1",
         "zipCode": "34343",
-        "city": "Lessebo"
+        "city": "Åmål",
+        "profilePic": "https://www.randomaddressgenerator.com/media/face/female7.jpg"
       },
       {
         "id": 7,
-        "name": "Bertil",
-        "fullName": "Nils Karlsson",
-        "street": "Kostavagen 16",
+        "name": "Lars",
+        "fullName": "Lars Larsson",
+        "street": "Larsavägen 1",
         "zipCode": "34343",
-        "city": "Lessebo"
+        "city": "Larseboda",
+        "profilePic": "https://www.randomaddressgenerator.com/media/face/male11.jpg"
       }]}
