@@ -1,0 +1,18 @@
+<!-- visar rätt innehåll beroende på om loggedOn är true eller false i authService.-->
+<div *ngIf="authService.loggedOn; else loggedOff">
+  <div class="userListContainer">
+    <app-user-list [user]="users"> </app-user-list>
+  </div>
+
+  <div class="userEditContainer">
+    <!-- Tar emot output från edit-users - kör addUser eller removeUser -->
+    <app-edit-users
+      (userOutput)="addUser($event)"
+      (userOutputRemove)="removeUser($event)"
+    >
+    </app-edit-users>
+  </div>
+</div>
+<ng-template #loggedOff>
+  <h2>Please login to see this content!</h2>
+</ng-template>

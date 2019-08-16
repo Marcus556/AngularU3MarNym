@@ -1,0 +1,15 @@
+.nav {
+    text-align: center;
+    border-bottom: solid black 1px;
+    width: 100%;
+    height: 30px;
+    background-color: steelblue;
+}
+.nav a {
+    color: white;
+    margin: 20px;
+    font-weight: bold;
+}
+.nav a.active {
+    color: silver;
+}

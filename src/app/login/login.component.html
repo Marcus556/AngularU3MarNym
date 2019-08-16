@@ -1,0 +1,69 @@
+<div class="row">
+  <div class="col-xs-12">
+    <div class="form">
+      <!-- ngIf kollar om loggedOn i authservice är true eller false och visar login eller logout -->
+      <div *ngIf="authService.loggedOn; else loggedOff">
+        <h2>You are already logged in!</h2>
+        <!-- Kör logout() i authService och ngOnInit för att uppdatera komponenten 
+            ( Antar att det finns bättre sätt att göra det på, men detta verkade vara det enklaste sättet.) -->
+        <button
+          (click)="authService.logout(); ngOnInit()"
+          class="btn btn-danger btn-sm"
+        >
+          Logout
+        </button>
+      </div>
+      <ng-template #loggedOff>
+        <form (ngSubmit)="authService.login(email, password)" #form="ngForm">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            required
+            email
+            [(ngModel)]="email"
+            class="form-control"
+            type="email"
+            #emailTouched="ngModel"
+            [ngClass]="{
+              redBorder: emailTouched.invalid && emailTouched.dirty
+            }"
+          />
+          <div
+            *ngIf="emailTouched.invalid && emailTouched.dirty"
+            class="alert alert-danger"
+          >
+            Incorrect email!
+          </div>
+          <label for="password">Password</label>
+          <input
+            id="password"
+            [(ngModel)]="password"
+            class="form-control"
+            type="password"
+            required
+            minlength="10"
+            name="password"
+          />
+          <!-- Kör login() i authService och skickar med string "user" och angivet userName i input-fielden. -->
+          <!-- <button
+            (click)="authService.login(email, password)"
+            class="btn btn-success btn-sm"
+            [disabled]="form.invalid"
+          >
+            Login
+          </button> -->
+          <button
+            type="submit"
+            class="btn btn-success btn-sm"
+            [disabled]="form.form.invalid"
+          >
+            Login
+          </button>
+
+          <br />
+        </form>
+      </ng-template>
+    </div>
+  </div>
+</div>

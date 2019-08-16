@@ -1,0 +1,18 @@
+<div id="container" *ngIf="users">
+  <img class="profilePic" src="{{ users.profilePic }}" /><br />
+  <div class="userText">
+    <h4>Name:</h4>
+    <h4>Fullname:</h4>
+    <h4>Street:</h4>
+    <h4>Zipcode:</h4>
+    <h4>City:</h4>
+  </div>
+  <div class="user">
+    <h4>{{ users.name }}</h4>
+    <h4>{{ users.fullName }}</h4>
+    <h4>{{ users.street }}</h4>
+    <h4>{{ users.zipCode }}</h4>
+    <h4>{{ users.city }}</h4>
+  </div>
+  <br style="clear: both" />
+</div>

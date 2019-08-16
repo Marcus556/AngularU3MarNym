@@ -1,0 +1,13 @@
+.userListContainer, .userEditContainer {
+    display: inline-block;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.623);
+    border: rgb(255, 252, 252) solid 3px;
+    border-radius: 30px;
+    margin: 15px;
+    align-items: flex-start;
+}
+html, body {
+    color: white;
+}
+
